@@ -40,7 +40,7 @@ def main():
         if command == "list":
             list_tasks(tasks)
         elif command == "add":
-            add_tasks(tasks, arg)
+            add_task(tasks, arg)
         elif command == "complete"|"finish":
             complete_tasks(tasks, int(arg))
         elif command == "delete"|"remove":
