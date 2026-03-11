@@ -41,11 +41,11 @@ def main():
             list_tasks(tasks)
         elif command == "add":
             add_task(tasks, arg)
-        elif command == "complete"|"finish":
+        elif command in ("complete", "finish"):
             complete_tasks(tasks, int(arg))
-        elif command == "delete"|"remove":
+        elif command in ("delete", "remove"):
             delete_task(tasks, int(arg))
-        elif command == "quit"|"exit":
+        elif command in ("quit", "exit"):
             break
             
 if __name__ == "__main__":
