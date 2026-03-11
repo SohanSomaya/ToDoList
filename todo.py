@@ -33,7 +33,7 @@ def delete_task(tasks, task_id):
 def main():
     tasks = load_tasks()
     while True:
-        user_input - input("\n> ").strip()
+        user_input = input("\n> ").strip()
         parts = user_input.split(" ", 1)
         command = parts[0].lower()
         arg = parts[1] if len(parts) > 1 else ""
