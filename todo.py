@@ -48,4 +48,5 @@ def main():
         elif command == "quit"|"exit":
             break
             
-
+if __name__ == "__main__":
+    main()
