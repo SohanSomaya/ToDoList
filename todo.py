@@ -16,7 +16,7 @@ def add_task(tasks, title):
 
 def complete_tasks(tasks, task_id):
     for task in tasks:
-        if task["id"] == task.id:
+        if task["id"] == task_id:
             task["done"] = True
             save_tasks(tasks)
             return
@@ -24,7 +24,7 @@ def complete_tasks(tasks, task_id):
 
 def delete_task(tasks, task_id):
     for task in tasks:
-        if task["id"] == task.id:
+        if task["id"] == task_id:
             tasks.remove(task)
             save_tasks(task)
             return
